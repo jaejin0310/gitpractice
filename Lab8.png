@@ -1,3 +1,13 @@
+$ cd branch-test/
+$ git init
+
+$ echo "#practicing git branching and merging" >> README.md
+$ cat README.md
+
+$ echo "first edition" >> edition.txt  # 파일 이름 수정
+$ cat edition.txt  # 파일 이름 수정
+
+
 # Git 저장소 초기화
 git init
 
