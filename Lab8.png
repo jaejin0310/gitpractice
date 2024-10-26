@@ -1,0 +1,39 @@
+# Git 저장소 초기화
+git init
+
+# 첫 번째 커밋
+echo "First commit" > file.txt
+git add file.txt
+git commit -m "first commit"
+
+# 두 번째 커밋
+echo "Second commit" >> file.txt
+git add file.txt
+git commit -m "second commit"
+
+# 세 번째 커밋
+echo "Third commit" >> file.txt
+git add file.txt
+git commit -m "third commit"
+
+# 새로운 브랜치 생성 및 체크아웃
+git checkout -b new_feature
+
+# new_feature 브랜치에서 첫 번째 커밋
+echo "New feature" >> file.txt
+git add file.txt
+git commit -m "new_feature"
+
+# new_feature 브랜치에서 두 번째 커밋
+echo "Issue resolved" >> file.txt
+git add file.txt
+git commit -m "issue resolved"
+
+# master 브랜치로 돌아가기
+git checkout master
+
+# new_feature 브랜치를 master에 병합
+git merge new_feature -m "merge message"
+
+# 결과 확인용 Git 로그 명령어 (옵션)
+git log --oneline --decorate --graph --all
